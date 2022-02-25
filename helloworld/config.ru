@@ -1,4 +1,5 @@
-# This file is used by Rack-based servers to start the application.
-
-require ::File.expand_path('../config/environment',  __FILE__)
-run RailsStarter::Application
+#\ -p 8080
+require './app'
+$stdout.sync = true
+$stderr.sync = true
+run Sinatra::Application
